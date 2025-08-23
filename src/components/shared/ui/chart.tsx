@@ -25,14 +25,10 @@ interface ChartPayloadItem {
   value?: number;
   color?: string;
   fill?: string;
-  payload?: Record<string, any>;
+  payload?: Record<string, unknown>;
 }
 
-interface ChartTooltipPayload {
-  active?: boolean;
-  payload?: ChartPayloadItem[];
-  label?: string | number;
-}
+
 
 type ChartContextProps = {
   config: ChartConfig;
@@ -122,7 +118,6 @@ const ChartTooltip = RechartsPrimitive.Tooltip;
 
 function ChartTooltipContent({
   active,
-  payload,
   className,
   indicator = "dot",
   hideLabel = false,
@@ -134,15 +129,26 @@ function ChartTooltipContent({
   color,
   nameKey,
   labelKey,
-}: React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
-  React.ComponentProps<"div"> & {
-    hideLabel?: boolean;
-    hideIndicator?: boolean;
-    indicator?: "line" | "dot" | "dashed";
-    nameKey?: string;
-    labelKey?: string;
-  }) {
+  ...props
+}: React.ComponentProps<"div"> & {
+  active?: boolean;
+  payload?: ChartPayloadItem[];
+  hideLabel?: boolean;
+  hideIndicator?: boolean;
+  indicator?: "line" | "dot" | "dashed";
+  label?: string | number;
+  labelFormatter?: (value: unknown, payload: ChartPayloadItem[]) => React.ReactNode;
+  labelClassName?: string;
+  formatter?: (value: unknown, name: string, props: unknown, index: number, payload: unknown) => React.ReactNode;
+  nameKey?: string;
+  labelKey?: string;
+}) {
   const { config } = useChart();
+
+  // Extract payload from props if it exists, otherwise use empty array
+  const payload = React.useMemo(() => {
+    return (props as { payload?: ChartPayloadItem[] }).payload || [];
+  }, [props]);
 
   const tooltipLabel = React.useMemo(() => {
     if (hideLabel || !payload?.length) {
