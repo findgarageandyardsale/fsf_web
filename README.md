@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# Find Street Food
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for discovering and connecting with street food vendors and food trucks in your community.
 
 Currently, two official plugins are available:
 

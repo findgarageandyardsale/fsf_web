@@ -78,16 +78,6 @@ export function ForVendorsSection() {
                 );
               })}
             </div>
-
-            <Button
-              size="lg"
-              className="text-white hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: '#2e8943' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#1e5a2d'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#2e8943'}
-            >
-              List Your Street Food Spot Today
-            </Button>
           </div>
         </div>
       </div>

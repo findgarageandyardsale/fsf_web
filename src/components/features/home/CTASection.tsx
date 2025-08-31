@@ -33,20 +33,14 @@ export function CTASection() {
           </Button>
           <Button
             size="lg"
-            variant="outline"
-            className="text-white hover:text-current transition-all"
+            className="hover:opacity-90 transition-opacity"
             style={{
-              borderColor: 'white',
-              color: 'white'
+              backgroundColor: 'white',
+              color: '#2e8943'
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'white';
-              e.currentTarget.style.color = '#2e8943';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '';
-              e.currentTarget.style.color = 'white';
-            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'white'}
+
           >
             <Download className="w-5 h-5 mr-2" />
             Download for Android

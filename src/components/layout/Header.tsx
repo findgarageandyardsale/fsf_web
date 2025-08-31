@@ -1,5 +1,5 @@
 import { Button } from "../shared/ui/button";
-import logo from '../../assets/images/425a147b79e142da2ae3cfdd0e12c2f48da23b59.png';
+import logo from '../../assets/images/findstreetfood.jpeg';
 
 export function Header() {
   const scrollToSection = (id: string) => {

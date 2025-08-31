@@ -64,9 +64,9 @@ export function ForFoodLoversSection() {
 
           <div className="relative">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1741515042603-70545daeb0c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHNhbGFkJTIwZnJlc2glMjBmb29kfGVufDF8fHx8MTc1NTkzMjcyN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Fresh Green Salad"
-              className="w-full rounded-2xl shadow-2xl"
+              src="/src/assets/images/truck1.jpg"
+              alt="Find Street Food Hero"
+              className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl"
             />
 
             {/* Floating rating card */}

@@ -58,8 +58,8 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative z-10">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1742887212957-7b970e508a5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHZlZ2V0YWJsZXMlMjBmcmVzaCUyMGhlYWx0aHl8ZW58MXx8fHwxNzU1OTMyNzI3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Fresh Green Vegetables"
+                src="/src/assets/images/truck1.jpg"
+                alt="Find Street Food Hero"
                 className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl"
               />
             </div>
