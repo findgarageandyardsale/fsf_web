@@ -1,4 +1,3 @@
-import { Button } from "../../shared/ui/button";
 import { ImageWithFallback } from "../../shared/ui/ImageWithFallback";
 import { DollarSign, Users, MapPin, TrendingUp } from "lucide-react";
 
