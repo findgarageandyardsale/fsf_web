@@ -1,5 +1,4 @@
 import { Facebook, Twitter, Instagram, Mail } from "lucide-react";
-import logo from '../../assets/images/findstreetfood.jpeg';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,7 +12,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo and description */}
           <div className="md:col-span-2">
-            <img src={logo} alt="Find Street Food" className="h-16 w-auto" />
+            <img
+              src="/src/assets/images/findstreetfood.jpeg"
+              alt="Find Street Food"
+              className="h-12 w-auto mb-4 brightness-0 invert"
+            />
             <p className="text-white text-opacity-80 mb-4 max-w-md">
               Connecting food lovers with authentic street vendors and food trucks.
               Discover, enjoy, and support local food culture in your community.

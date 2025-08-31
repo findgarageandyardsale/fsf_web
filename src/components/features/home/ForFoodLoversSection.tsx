@@ -1,5 +1,6 @@
-import { ImageWithFallback } from "../../shared/ui/ImageWithFallback";
 import { Star, Bookmark, Share2 } from "lucide-react";
+import truck from '../../../assets/images/truck2.jpg';
+
 
 export function ForFoodLoversSection() {
   const benefits = [
@@ -63,8 +64,8 @@ export function ForFoodLoversSection() {
           </div>
 
           <div className="relative">
-            <ImageWithFallback
-              src="/src/assets/images/truck1.jpg"
+            <img
+              src={truck}
               alt="Find Street Food Hero"
               className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl"
             />

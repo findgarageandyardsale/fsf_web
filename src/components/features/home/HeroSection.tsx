@@ -1,6 +1,7 @@
 import { Button } from "../../shared/ui/button";
-import { ImageWithFallback } from "../../shared/ui/ImageWithFallback";
 import { Download, Apple } from "lucide-react";
+import truck from '../../../assets/images/truck1.jpg';
+
 
 export function HeroSection() {
   return (
@@ -57,11 +58,8 @@ export function HeroSection() {
 
           <div className="relative">
             <div className="relative z-10">
-              <ImageWithFallback
-                src="/src/assets/images/truck1.jpg"
-                alt="Find Street Food Hero"
-                className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl"
-              />
+              <img src={truck} alt="Find Street Food Hero" className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl" />
+          
             </div>
 
             {/* Floating food icons */}
