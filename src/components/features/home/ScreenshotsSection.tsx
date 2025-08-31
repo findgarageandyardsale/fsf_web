@@ -1,23 +1,31 @@
-import { ImageWithFallback } from "../../shared/ui/ImageWithFallback";
+import image1 from '../../../assets/images/image1.png';
+import image2 from '../../../assets/images/image2.png';
+import image3 from '../../../assets/images/image3.png';
+import image4 from '../../../assets/images/image4.png';
 
 export function ScreenshotsSection() {
-  // Mock app screenshots - in real app, these would be actual app screenshots
+  // App screenshots with actual images
   const screenshots = [
     {
-      title: "Map View",
-      description: "Find street food vendors near you with our interactive map"
+      // Login 
+      title: "Login View",
+      description: "Login to the app with your email and password",
+      image: image1
     },
     {
-      title: "Vendor Listings",
-      description: "Browse detailed profiles of local food vendors and trucks"
+      title: "Vendor List",
+      description: "Browse detailed profiles of local food vendors and trucks",
+      image: image2
     },
     {
-      title: "Menu Browser",
-      description: "View complete menus with photos and pricing"
+      title: "Add New Vendor",
+      description: "Add a new vendor to the app",
+      image: image3
     },
     {
-      title: "Reviews & Ratings",
-      description: "Read reviews and share your food experiences"
+      title: "My Profile",
+      description: "View your profile and settings",
+      image: image4
     }
   ];
 
@@ -43,11 +51,8 @@ export function ScreenshotsSection() {
                 {/* Mock phone frame */}
                 <div className="bg-gray-900 rounded-3xl p-2 shadow-2xl group-hover:scale-105 transition-transform duration-300">
                   <div className="bg-white rounded-2xl overflow-hidden aspect-[9/16]">
-                    <ImageWithFallback
-                      src="https://images.unsplash.com/photo-1623002071634-54590669fe3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHNtb290aGllJTIwaGVhbHRoeSUyMGRyaW5rfGVufDF8fHx8MTc1NTkzMjcyN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                      alt={screenshot.title}
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={screenshot.image} alt={screenshot.title} className="w-full h-full object-cover" />
+
 
                     {/* Overlay to make it look more like app UI */}
                     <div
