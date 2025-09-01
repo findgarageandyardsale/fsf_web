@@ -1,5 +1,5 @@
 import { Button } from "../shared/ui/button";
-import logo from '../../assets/images/findstreetfood.jpeg';
+import logo from '../../assets/images/fsf_transparent.png';
 
 export function Header() {
   const scrollToSection = (id: string) => {
@@ -59,6 +59,7 @@ export function Header() {
           </nav>
 
           <Button
+            onClick={() => scrollToSection('download-app')}
             className="text-white hover:opacity-90 transition-opacity"
             style={{ backgroundColor: '#2e8943' }}
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#1e5a2d'}

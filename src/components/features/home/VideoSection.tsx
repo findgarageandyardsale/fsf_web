@@ -1,18 +1,22 @@
-import { Play } from "lucide-react";
+import { Play, Smartphone } from "lucide-react";
+import qrCode from '../../../assets/images/qrcode.png';
+import play_store from '../../../assets/images/play_store.png';
+import app_store from '../../../assets/images/app_store.png';
+import { PLAY_STORE_URL, APP_STORE_URL } from '../../../common/constants';
 
 export function VideoSection() {
   // Replace this with your actual Vimeo video ID
   const vimeoVideoId = "916055987"; // Placeholder - replace with your actual video ID
-  
+
   return (
-    <section 
-      id="video" 
+    <section
+      id="video"
       className="py-16"
       style={{ background: 'linear-gradient(to bottom right, #ffffff, #f0f9f2)' }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div 
+          <div
             className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-6"
             style={{ backgroundColor: 'rgba(74, 157, 94, 0.3)' }}
           >
@@ -22,7 +26,7 @@ export function VideoSection() {
             See Find Street Food in Action
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Watch how our app connects food lovers with amazing street vendors and transforms 
+            Watch how our app connects food lovers with amazing street vendors and transforms
             the way you discover local cuisine.
           </p>
         </div>
@@ -40,21 +44,21 @@ export function VideoSection() {
               className="w-full h-full"
             />
           </div>
-          
+
           {/* Decorative elements */}
-          <div 
+          <div
             className="absolute -top-4 -left-4 w-8 h-8 rounded-full opacity-70 animate-pulse"
             style={{ backgroundColor: '#4a9d5e' }}
           ></div>
-          <div 
+          <div
             className="absolute -top-2 -right-6 w-6 h-6 rounded-full opacity-60 animate-bounce delay-300"
             style={{ backgroundColor: '#8dd5a3' }}
           ></div>
-          <div 
+          <div
             className="absolute -bottom-6 -left-2 w-10 h-10 rounded-full opacity-50 animate-pulse delay-500"
             style={{ backgroundColor: '#2e8943' }}
           ></div>
-          <div 
+          <div
             className="absolute -bottom-4 -right-4 w-7 h-7 rounded-full opacity-80 animate-bounce delay-700"
             style={{ backgroundColor: '#1e5a2d' }}
           ></div>
@@ -73,6 +77,64 @@ export function VideoSection() {
           <div className="text-center">
             <div className="text-3xl font-bold mb-2" style={{ color: '#1f5a2d' }}>25+</div>
             <p className="text-gray-600">Cities Covered</p>
+          </div>
+        </div>
+
+        {/* QR Scan and Download Section */}
+        <div id="download-app" className="mt-20 text-center mt-16">
+          <div
+            className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-6"
+            style={{ backgroundColor: 'rgba(74, 157, 94, 0.3)' }}
+          >
+            <Smartphone className="w-8 h-8" style={{ color: '#2e8943' }} />
+          </div>
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Get Our Mobile App
+          </h3>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            Download our app to discover street food vendors on the go.
+            Scan the QR code or use the download links below.
+          </p>
+
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            {/* QR Code */}
+            <div className="bg-white p-4 rounded-2xl shadow-lg border-2 border-gray-100">
+              <div className="flex items-center justify-center">
+                <img
+                  src={qrCode}
+                  alt="QR Code"
+                  className="object-contain"
+                  style={{ width: '120px', height: '120px' }}
+                />
+              </div>
+              <p className="text-sm text-gray-500 mt-3">Scan to download</p>
+            </div>
+
+            {/* Download Buttons */}
+            <div className="space-x-4">
+              <a
+                href={PLAY_STORE_URL}
+                className="inline-block w-36 sm:w-auto"
+                target="_blank"
+              >
+                <img
+                  src={play_store}
+                  alt="Google Play"
+                  className="h-10 w-auto object-contain"
+                />
+              </a>
+              <a
+                href={APP_STORE_URL}
+                className="inline-block w-36 sm:w-auto"
+                target="_blank"
+              >
+                <img
+                  src={app_store}
+                  alt="App Store"
+                  className="h-10 w-auto object-contain"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
