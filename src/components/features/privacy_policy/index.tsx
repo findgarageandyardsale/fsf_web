@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
                     Privacy Policy
                 </h1>
                 <div>
-                    Welcome to Find Garage and Yard Sale (referred to as "we," "us," or
+                    Welcome to Find Street Food (referred to as "we," "us," or
                     "our"). This Privacy Policy explains how we collect, use, disclose,
                     and protect your personal information when you use our mobile app,
                     website, and services (collectively, the "Services"). By accessing or
@@ -45,8 +45,8 @@ const PrivacyPolicy = () => {
                     information) when you make a purchase or pay for a listing.
                 </div>
                 <div>
-                    - User Content: Information you post, such as item descriptions,
-                    photos, and sale details.
+                    - User Content: Information you post, such as food descriptions,
+                    photos, and vendor details.
                 </div>
                 <br />
                 <div className="font-bold">
@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
                 <ul>
                     <li>
                         - Location Data: Approximate location (if enabled) to help you find
-                        nearby garage and yard sales.
+                        nearby street food vendors and food trucks.
                     </li>
                 </ul>
                 <br />
@@ -110,7 +110,7 @@ const PrivacyPolicy = () => {
                 <div>We may share your information in the following circumstances:</div>
                 <div>
                     - With Other Users: Your profile information and user content (e.g.,
-                    listings) may be visible to other users.
+                    reviews, favorites) may be visible to other users.
                 </div>
                 <div>
                     - With Service Providers: Third parties who help us operate our
@@ -136,7 +136,7 @@ const PrivacyPolicy = () => {
                     absolute security.
                 </div>
                 <div>
-                    Garage and Yard Sale Inc may also share aggregated or de-identified
+                    Find Street Food Inc may also share aggregated or de-identified
                     information that cannot identify you.
                 </div>
                 <br />
@@ -192,7 +192,7 @@ const PrivacyPolicy = () => {
                         If you have questions or concerns about this Privacy Policy or our
                         data practices, please contact us at:
                     </div>
-                    <div> Email: support@GarageandYardSale.com</div>
+                    <div> Email: support@findstreetfood.com</div>
                     <br />
                 </div>
             </div>
