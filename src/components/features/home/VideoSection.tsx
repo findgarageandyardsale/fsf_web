@@ -6,7 +6,7 @@ import { PLAY_STORE_URL, APP_STORE_URL } from '../../../common/constants';
 
 export function VideoSection() {
   // Replace this with your actual Vimeo video ID
-  const vimeoVideoId = "916055987"; // Placeholder - replace with your actual video ID
+  const vimeoVideoId = "1116346495"; // Placeholder - replace with your actual video ID
 
   return (
     <section
