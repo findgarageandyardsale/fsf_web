@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from '../../assets/images/fsf_transparent.png';
 
 
@@ -77,14 +78,14 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-4 text-white">Legal</h3>
             <ul className="space-y-2 text-white text-opacity-70">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/privacy-policy"
                   className="transition-colors"
                   onMouseEnter={(e) => e.currentTarget.style.color = '#4a9d5e'}
                   onMouseLeave={(e) => e.currentTarget.style.color = ''}
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
                 <a

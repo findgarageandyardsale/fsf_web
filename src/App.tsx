@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   Header,
   Footer,
@@ -8,10 +9,11 @@ import {
   ForVendorsSection,
   HowItWorksSection,
   ScreenshotsSection,
-  CTASection
+  CTASection,
+  PrivacyPolicy
 } from "./components";
 
-export default function App() {
+function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -27,5 +29,28 @@ export default function App() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+function PrivacyPage() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main>
+        <PrivacyPolicy />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPage />} />
+      </Routes>
+    </Router>
   );
 }
